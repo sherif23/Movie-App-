@@ -66,7 +66,7 @@ public class SettingsActivity extends PreferenceActivity
         return true;
     }
 
-    @Override
+  /*  @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         LinearLayout root = (LinearLayout)findViewById(android.R.id.list).getParent().getParent().getParent();
@@ -78,6 +78,6 @@ public class SettingsActivity extends PreferenceActivity
                 finish();
             }
         });
-    }
+    }*/
 
 }
