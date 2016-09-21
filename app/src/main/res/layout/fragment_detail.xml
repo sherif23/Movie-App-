@@ -1,0 +1,139 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:id="@+id/scrollView"
+        android:layout_weight="0.51"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/detail_text"
+                android:paddingBottom="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="185dp"
+                    android:layout_height="104dp"
+                    android:layout_gravity="left"
+                    android:id="@+id/poster_image"
+                    android:paddingBottom="10dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:paddingLeft="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.7"
+                        android:textSize="30dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/vote_average" />
+                    <ToggleButton
+                        android:id="@+id/toggle"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/drawable"
+                        android:layout_margin="10dp"
+                        android:textOn=""
+                        android:textOff=""
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Date : "
+                    android:paddingBottom="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24/5/2012"
+                    android:id="@+id/release_date"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:paddingBottom="5dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overview : "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/overView_textView" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="246dp"
+        android:layout_gravity="bottom"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trailers : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:id="@+id/listView_trailers"
+            android:layout_weight="1.43" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView2" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:id="@+id/review_listView" />
+    </LinearLayout>
+
+
+</LinearLayout>
